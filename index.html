@@ -10,26 +10,35 @@
 <body>
 
 
-    <div class="container">
+    <div class="container bg-dark ">
         <section class="">
-            <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
-            <div class="row">
-                <div class="col">
-                    <label for="formGroupExampleInput2" class="form-label">Nome Cognome</label>
+            <h2 class="text-white text-center">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+            <div class="row py-4 bg-white">
+                <div class="col text-center">
+                    <label for="formGroupExampleInput2" class="form-label text-danger">Nome Cognome</label>
                   
-                    <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                    <input type="text"  id="nameUser " class="form-control border border-danger" placeholder="..." aria-label="First name">
                 </div>
-                <div class="col">
-                    <label for="formGroupExampleInput2" class="form-label">Km da percorrere</label>
+                <div class="col text-center">
+                    <label for="formGroupExampleInput2" class="form-label text-danger">Km da percorrere</label>
                   
-                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                    <input type="text" id="Km"class="form-control border border-danger" placeholder="..." aria-label="Last name">
                 </div>
-                <div class="col">
-                    <label for="inputState" class="form-label">State</label>
-                    <select id="inputState" class="form-select">
+                <div class="col text-center">
+                    <label for="inputState"  class="form-label text-danger">State</label>
+                    <select id="inputState" class="form-select border border-danger ">
                       <option selected>Choose...</option>
-                      <option>...</option>
+                      <option id="">Maggiorenne</option>
+                      <option id="">Minorenni</option>
+                      <option id="">Senior >65</option>
+
+
                     </select>
+                  </div>
+                  <div class="py-4 text-center">
+                    <button class="fw-bold text-danger border border-danger py-1 px-2">Genera</button>
+                    <button class="fw-bold text-danger border border-danger py-1 px-2">Annulla</button>
+
                   </div>
 
             </div>
